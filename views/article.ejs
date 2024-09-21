@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div style="background-color:#f8f6e3; height:100vh; display: flex;
+          flex-direction: column;
+          align-items: center;">
+    <div style="display: flex; flex-direction:column; align-items:center;" class="border border-success rounded-top w-50 mt-4 p-4">
+        <form action="/createarticle" method="post" enctype="multipart/form-data" class="">
+            <h3>Creating new article</h3>
+            <label for="title" class="form-level">Title: </label>
+            <input type="text" name="title" class="form-control">
+            <label for="writer" class="form-level">Writer: </label>
+            <input type="text" name="writer" class="form-control">
+            <label for="content" class="form-level">Body</label>
+            <textarea name="content"  rows="5" class="form-control"></textarea>
+            <label for="thumbnail" class="form-level">Upload your image:</label>&nbsp
+            <input type="file" name="thumbnail" class="form-control">
+            <input type="submit" value="submit" class="btn btn-success mt-3">
+        </form>
+    </div>
+    </div>
+</body>
+</html>

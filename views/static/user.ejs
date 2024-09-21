@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div style="background-color:#f8f6e3; height:100vh; display: flex;
+          flex-direction: column;
+          align-items: center;">
+      <div class="border border-success rounded-top w-25 mt-4 p-4" style="background-color: #FFFDCB;">
+        <form action="/handlelogin" method="post" enctype="multipart/form-data" class="mt-5">
+            <h2 class="text-center">Login</h2>
+          <label for="name" class="form-level">Name: </label><br />
+          <input type="text" name="name" class="form-control" />
+          <label for="email" class="form-level">email: </label>
+          <input type="email" name="email" class="form-control" />
+          <label for="password" form="password" class="form-level"
+            >password:</label
+          >
+          <input type="password" name="password" class="form-control" />
+          <input type="submit" value="login" class="btn btn-success mt-2" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

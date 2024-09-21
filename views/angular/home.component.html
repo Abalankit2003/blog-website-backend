@@ -1,0 +1,73 @@
+<section class="featured-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+              <h2 class="text-white">Featured Posts</h2>
+              <p class="text-white">
+                "Discover the power of mindfulness in our featured post! Learn practical tips for living in the present and enhancing well-being. Embrace mindfulness and transform your life today!"</p>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- *ngFor="let featuredPost of featuredPostsArray" -->
+                <app-post-card></app-post-card>
+            </div>
+            <div class="col-lg-3">
+                <app-postcardtwo></app-postcardtwo>
+            </div>
+            <div class="col-lg-3">
+                <app-postcardthree></app-postcardthree>
+            </div>
+            <div class="col-lg-3">
+                <app-postcardfour></app-postcardfour>
+            </div>
+            
+            <!-- app-post-card[postData]="featuredPost"></app-post-card> -->
+            <!-- <div class="col-lg-3">
+                <app-post-card></app-post-card>
+            </div>
+            <div class="col-lg-3">
+                <app-post-card></app-post-card>
+            </div>
+            <div class="col-lg-3">
+                <app-post-card></app-post-card>
+            </div> -->
+
+            <!-- if we use ngfor then commentout other 3 divs -->
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5">
+    <div class="col-md-12 text-center">
+        <h2>Latest Posts</h2>
+        <p>
+            "Explore our latest post! Dive into captivating topics, insightful discussions, and valuable content. Stay updated with the freshest insights and trends. Don't miss out, read now!"</p>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4 mt-3">
+        <!-- <div class="col-md-4 mt-3" *ngFor = "Let latestPost of latestPostArray"> -->
+
+            <app-postcardseven></app-postcardseven>
+            <!-- <app-post-card[postData]="LatestPost"></app-post-card> -->
+        </div>
+
+        <!-- comment out this other divs -->
+        <div class="col-md-4 mt-3">
+            <app-postcardfive></app-postcardfive>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-postcardsix></app-postcardsix>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-postcardeight></app-postcardeight>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-postcardnine></app-postcardnine>
+        </div>
+        <div class="col-md-4 mt-3">
+            <app-postcardten></app-postcardten>
+        </div>
+    </div>
+</section>

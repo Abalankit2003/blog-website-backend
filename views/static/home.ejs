@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div
+      style="
+        min-height: 100vh;
+        background-color: #b3c8cf;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h2>Welcome to Blog-website.</h2>
+      <p>You are not authorised to access the website.</p>
+      <p>For accessing click on one of the below:</p>
+      <div style="display: flex; justify-content: space-between; width:18%">
+        <form action="/login" method="get">
+          <input type="submit" value="Login" class="btn btn-primary" />
+        </form>
+        <form action="/signup" method="get" class="align-self-end">
+          <input type="submit" value="Signup" class="btn btn-primary" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
